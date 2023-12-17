@@ -2,6 +2,8 @@
 
 Welcome to the ViewTransition API example, part of the Unravel Workshop series. This application showcases the Unravel team's expertise in animating route changes, providing a hands-on, interactive demonstration of the ViewTransition API.
 
+**Video**: https://drive.google.com/file/d/1zac_qFJuoyw_0l7EykXgUAbnojaaYNpr/view?usp=drive_link
+
 ## Overview
 
 This example is a testament to Unravel's commitment to simplicity and elegance in software solutions. It is built using Tailwind CSS, TypeScript, SCSS, and Webpack, ensuring a modern and efficient development experience. A unique aspect of this project is the use of images in place of certain HTML elements, streamlining the development process while maintaining a high-quality user interface.
