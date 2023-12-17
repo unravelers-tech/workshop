@@ -1,4 +1,4 @@
-# Unravel Workshop - ViewTransition API Example
+# ViewTransition API Example
 
 Welcome to the ViewTransition API example, part of the Unravel Workshop series. This application showcases the Unravel team's expertise in animating route changes, providing a hands-on, interactive demonstration of the ViewTransition API.
 
