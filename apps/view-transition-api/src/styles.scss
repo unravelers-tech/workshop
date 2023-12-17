@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind utilities;
+
+.animatable img {
+  view-transition-name: animatable;
+  contain: paint;
+}
+
+.animatable-absolute-chip {
+  view-transition-name: animatable-absolute-chip;
+  contain: paint;
+}
+
+.content-container img {
+  contain: paint;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes slide-from-bottom {
+  from { transform: translateY(40px); }
+}
+
+@keyframes slide-to-top {
+  to { transform: translateY(-40px); }
+}
+
+::view-transition-old(root) {
+  animation:
+    100ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+    400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-top;
+}
+
+::view-transition-old(animatable-absolute-chip) {
+  animation: 80ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+}
+
+::view-transition-new(root),
+::view-transition-new(animatable-absolute-chip) {
+  animation:
+    300ms cubic-bezier(0, 0, 0.2, 1) 100ms both fade-in,
+    400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-bottom;
+}
+
+::view-transition-old(animatable),
+::view-transition-new(animatable) {
+  mix-blend-mode: normal;
+  height: 100%;
+  overflow: clip;
+}
+
+::view-transition-image-pair(animatable) {
+  isolation: none;
+}
+
+::view-transition-group(animatable) {
+  animation-duration: 310ms;
+}
+
+.root-to-card-page::view-transition-old(animatable),
+.card-page-to-root::view-transition-new(animatable) {
+  object-fit: contain;
+}
+
+.root-to-card-page::view-transition-new(animatable),
+.card-page-to-root::view-transition-old(animatable) {
+  object-fit: cover;
+}
+
+* {
+  -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
+  -webkit-focus-ring-color: rgb(255 255 255 / 0%);
+  outline: none;
+}
+
+body,
+html {
+  margin: 0;
+}
