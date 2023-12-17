@@ -8,11 +8,10 @@ This example is a testament to Unravel's commitment to simplicity and elegance i
 
 ## Features
 
-- **Animated Route Changes**: Utilizes the ViewTransition API to animate transitions between different views or routes.
-- **Tailwind CSS Integration**: Offers a utility-first approach to styling for rapid UI development.
-- **TypeScript and SCSS**: Leverages the power of TypeScript for type-safe coding and SCSS for advanced styling capabilities.
+- **Animated Route Changes**: Utilizes the `ViewTransition API` to animate transitions between different pages.
 - **Minimalist Approach**: The codebase is framework-agnostic, focusing on the core functionality of page navigation without the overhead of additional frameworks.
-- **Utility Functions**: Includes a `utils.ts` file that simulates page navigation, showcasing the power of custom utility functions in a real-world scenario.
+- **Utility Functions**: Includes a `utils.ts` file that simulates page navigation.
+- **Custom Animation**: Include animation customization to follow the Unravel style and brand.
 
 ## Installation and Setup
 
