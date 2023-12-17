@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "build:view-transition-api": "webpack --mode=development",
-    "start:view-transition-api": "webpack serve --open --mode=development"
+    "build": "webpack --mode=development",
+    "start": "webpack serve --open --mode=development"
   },
   "devDependencies": {
     "@types/dom-navigation": "^1.0.3",
